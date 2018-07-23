@@ -1,0 +1,38 @@
+1. Calculating a tip
+
+Get total
+IF service is excellent
+  multiply total by 1.2 and reassign to total
+ELSE IF service is decent
+  multiply total by 1.15 and reassign to total
+ELSE IF service is mediocre
+  multiply total by 1.1 and reassign to total
+ELSE
+  leave total as is
+END
+
+2. Set up working environment
+
+TURN ON the computer
+Sign in to my user account
+Open Firefox Developer Edition
+Open the Hyper terminal emulator
+`cd` to current project
+Run `code .` to open VS Code
+
+3. Make cereal
+
+Grab a bowl
+Place bowl on the counter
+Grab a box of cereal and note where you got it from
+Open the box of cereal
+Fill around 80% of the bowl with cereal
+Close the box of cereal
+Place the box of cereal back where you grabbed it from
+Open the fridge
+Grab the milk
+Open the milk
+Pour milk into the bowl until most of the cereal is submerged
+Reseal the milk
+Put the milk back in the fridge
+Close the fridge
