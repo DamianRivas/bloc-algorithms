@@ -1,4 +1,6 @@
-[Here](https://imgur.com/k08YkQJ) is the chart I made for the benchmark.
+Here is the chart I made for the benchmark.
+
+![Chart](https://i.imgur.com/k08YkQJ.png)
 
 Here is the benchmark output:
 
