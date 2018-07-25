@@ -18,6 +18,3 @@ def heap_sort(collection)
 
   sorted_collection
 end
-
-collection = [22, 45, 12, 8, 10, 6, 72, 81, 33, 18, 50, 14]
-p heap_sort(collection)
