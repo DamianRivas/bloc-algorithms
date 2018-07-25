@@ -6,6 +6,7 @@ require_relative "./node.rb"
 require_relative "./min_binary_heap.rb"
 require_relative "./heap_sort.rb"
 
+# Benchmark the sorting of an array with 50 randomized numbers.
 collection = Array.new(50) { rand(1..1000) }
 
 Benchmark.bmbm do |x|
