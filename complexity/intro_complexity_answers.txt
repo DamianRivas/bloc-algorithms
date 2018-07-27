@@ -1,0 +1,27 @@
+1. An algorithm with an efficiency of O(1) is a rocket ship. While an algorithm
+with an efficiency of O(2^n) is a segway, slow and unappealing.
+
+2. The best case for binary search is when the item you're looking for is right
+in the middle of the collection so the algorthm instantly locates it.
+
+3. The worst case for binarry saerch is when it continuously havles the data until
+one possible choice is left.
+
+4. The bounded case scenario for binary search is somewhere between the worst case
+and the best case.
+
+5. Plot for the data: https://plot.ly/~damianrivas/1/#/
+
+6. As n approaches infinity the limit also approaches infinity.
+
+7. The algorithm has a Big-O of 2^n
+
+8. The Ruby method is in big_o_linear.rb
+
+9. Plot for the data: https://plot.ly/~damianrivas/3/#/
+
+10. Big-O for binary search is log(n)
+
+11. Big-Omega for binary search is constant time: 1.
+
+12. Big-Theta for binary search is somewhere bewteen constant time and log(n)
