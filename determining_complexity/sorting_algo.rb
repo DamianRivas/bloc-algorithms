@@ -1,4 +1,5 @@
 def sort(collection, from=0, to=nil)
+  p "hello"
   if to == nil
     # Sort the whole collection, by default
     to = collection.count - 1
@@ -47,8 +48,9 @@ def sort(collection, from=0, to=nil)
   sort collection, free + 1, to
  
   collection
- end
+end
 
-collection = [1, 5, 3, 6, 7, 8, 2]
+collection = [1, 5, 3, 6, 7, 8, 2, 9]
+# collection = [1, 1, 1, 1]
 
-p [collection,0]
+p sort(collection, 0)

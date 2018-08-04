@@ -6,8 +6,7 @@ and it looks for the largest item. The worst case scenario is when the largest
 item is the last, or the nth element in the collection, and every other operation
 is a constant time operation. So, this function has a Big-O of n.
 
-3. This function iterates througm
-gh a two-dimensional array starting at [0][0] and
+3. This function iterates through a two-dimensional array starting at [0][0] and
 it looks for the largest item. The worst case scenario is when the largest item
 is sitting at the end-most location.
 
@@ -30,18 +29,13 @@ f(n) = n - 2 + c
 Where c stands for the constant time operations. We only keep the largest term
 leaving us with f(n) = n
 
-6. For this final algorithm, the worst case is when the first call to `sort` is on
-the entire collection. Assume everything described from now on only happens in the
-worst case (ignoring early returns and more). The algorithm starts with a couple of
-constant time operations before leading up to a `while` loop.
+6. If the pivot ends up at the start or end of the collection, then the problem size
+is only reduced by 1 every time the function recursively calls itself. This happens
+repeatedly until n is 2 because the function returns immediately if n is 1 or 0.
 
-The while loop iterates through the whole collection with some constant time
-operations, so far the Big-O is at least n.
+We can represent this as the summation of the first n natural numbers subtracted by 1:
 
-Then, `sort` is recursively called for the collections on either side of the pivot.
-This means overall the process repeats itself every time with a sub-collection of
-n-1 until the size of the sub-collection is 1 or 0. This means the Big-O of `sort`
-is n! (n prime).
+n(n+1)/2 - 1
 
-By the way, it doesn't actually sort properly so I don't know if this was done on
-purpose.
+After distributing n and absorbing all constant and less significant terms, we are
+left with a Big-O of n^2.
