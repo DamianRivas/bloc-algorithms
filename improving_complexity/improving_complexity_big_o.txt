@@ -1,0 +1,33 @@
+poorly_written_ruby complexity:
+
+The first nested each goes through each element in the collection individually
+so that has a complexity of n
+
+Then the next loop iterates through every element in combined_array, and for each
+element it iterates through the sorted array. The sorted array starts out with
+a length of 1, and increments by 1. This is essentially the summation of the first
+n integers: n(n+1)/2. After distributing n, and eliminating the constants and
+less significant terms, we are left with the following:
+
+O(n^2)
+
+improving_complexity_version_one:
+
+This code contains minor code optimizations, but overall the complexity does not
+change. So, the Big-O is the same as poorly_written_ruby:
+
+O(n^2)
+
+improving_complexity_version_two:
+
+Version two uses quick sort, which on average performs better than merge sort
+with a Big-O of...
+
+O(n*log(n))
+
+improving_complexity_version_three:
+
+The last version uses Bubble sort which sorts in place, making it more space
+efficient. Although the Big-O is the same as the original.
+
+O(n^2)
