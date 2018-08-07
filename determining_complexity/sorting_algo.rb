@@ -1,5 +1,4 @@
 def sort(collection, from=0, to=nil)
-  p "hello"
   if to == nil
     # Sort the whole collection, by default
     to = collection.count - 1
